@@ -1,0 +1,43 @@
+html
+{
+    font-size: 14px;
+    scroll-behavior: smooth;
+}
+
+body
+{
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+
+    header
+    {
+        display: grid;
+        grid-template-columns: 0.2fr 0.8fr;
+
+        figure
+        {
+            img
+            {
+
+            }
+        }
+
+        nav
+        {
+
+            ul
+            {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+
+                li
+                {
+                    
+                }
+            }
+        }
+    }
+
+    
+}
