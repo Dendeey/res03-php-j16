@@ -15,7 +15,7 @@
     <body>
         <header>
             <figure>
-                <img src="" alt="Logo du site">
+                <img src="https://o.remove.bg/downloads/18b27d0e-c034-4a90-b821-99607e551b64/b88b921b0de27b28f8599271f3fedb6d-removebg-preview.png" alt="Logo du site">
             </figure>
             <nav>
                 <ul>
@@ -33,6 +33,9 @@
                     <h1>yepfolio</h1>
                     <h2>développement web & mobile</h2>
                 </header>
+                <section>
+                    <h1 class="sr-only">Image de fond</h1>
+                </section>
             </section>
             <section id="yepfolio-description">
                 <h1 class="sr-only">Explication de yepfolio</h1>

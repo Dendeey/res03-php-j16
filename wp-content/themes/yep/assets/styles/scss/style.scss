@@ -1,3 +1,5 @@
+@import "reset";
+
 html
 {
     font-size: 14px;
@@ -10,34 +12,90 @@ body
     width: 100vw;
     overflow-x: hidden;
 
-    header
+    .sr-only
+    {
+        display: none;
+    }
+
+    & > header
     {
         display: grid;
         grid-template-columns: 0.2fr 0.8fr;
+        background-color: rgb(10, 10, 92);
 
         figure
         {
+            
+
             img
             {
-
+                width: 12vw;
+                
             }
         }
 
         nav
         {
+            display: flex;
 
             ul
             {
-                display: grid;
-                grid-template-columns: repeat(4, 1fr);
-
+                display: flex;
+                flex-direction: row;
+                gap: 8em;
+                align-self: center;
+            
                 li
                 {
+                    list-style-type: none;
+                    text-transform: uppercase;
+                    color: white;
+                    font-size: 1.2em;
                     
                 }
             }
         }
     }
 
-    
+    & > main 
+    {
+        #main-section
+        {
+            height: 100vh;
+            display: grid;
+            grid-template-rows: 0.2fr 0.8fr;
+
+            header
+            {
+                background-color: black;
+                padding-top: 3vh;
+
+                h1
+                {
+                    
+                    color: white;
+                    text-transform: uppercase;
+                    font-size: 2em;
+                    font-weight: 500;
+                    text-align: center;
+                }
+
+                h2
+                {
+                    color: rgb(196, 20, 102);
+                    text-transform: uppercase;
+                    font-size: 1.8em;
+                    font-weight: 500;
+                    text-align: center;
+                }
+            }
+
+            section
+            {
+                background-image: url(https://www.evinux.org/wp-content/uploads/2021/09/pc-portable-clavier-ecran-lumineux-840x400.jpg);
+                background-size: cover;
+                background-position: center;
+            }
+        }
+    }
 }
