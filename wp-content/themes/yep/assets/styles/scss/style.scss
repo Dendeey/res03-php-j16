@@ -23,16 +23,17 @@ body
         display: grid;
         grid-template-columns: 0.2fr 0.8fr;
         background-color: rgb(10, 10, 92);
-        height: 10vh;
+        height: 12vh;
 
         figure
         {
             
 
 
-            img
+            svg
             {
-                width: 13vh;
+                width: 18vh;
+                margin-left: 3vw;
                 
             }
         }
@@ -50,10 +51,16 @@ body
             
                 li
                 {
-                    list-style-type: none;
-                    text-transform: uppercase;
-                    color: white;
-                    font-size: 1.2em;
+                    
+
+                    a 
+                    {
+                        text-decoration:none;
+                        list-style-type: none;
+                        text-transform: uppercase;
+                        color: white;
+                        font-size: 1.2em;
+                    }
                     
                 }
             }
@@ -67,10 +74,13 @@ body
             height: 100vh;
             display: grid;
             grid-template-rows: 0.2fr 0.8fr;
+            background-image: url("assets/img/home-computer.jpg");
+            background-size: cover;
+            background-position: center;
 
             header
             {
-                background-color: black;
+                
                 padding-top: 3vh;
 
                 h1
@@ -93,12 +103,6 @@ body
                 }
             }
 
-            section
-            {
-                background-image: url(https://www.evinux.org/wp-content/uploads/2021/09/pc-portable-clavier-ecran-lumineux-840x400.jpg);
-                background-size: cover;
-                background-position: center;
-            }
         }
 
         #yepfolio-description
@@ -170,14 +174,16 @@ body
                 {
                     grid-column: 1 / 2;
                     grid-row: 1 / 2;
-                    background-image: url(https://portal-cdn.scnat.ch/asset/6fa448d9-8935-5622-aabf-a38072964841/2Personalisierte_Gesundheit.png?b=25632ea7-3d85-5198-a1f0-4ad8c9dcd6ac&v=df8f0af8-c032-5691-983d-84399f3dabd8_100&s=BemJi1u43IKhuBMmsD2ab6cA6zawwM6Nr_qD3i5tf6Aj4U4VLzDFpXxq4CBe-B-5Cfj0mHLCg1S89lSrv0ZhXRFcUUkGUGXlPIQrJePIWBtf3kwOZ1sHagPcP8_VmpKU8SOWNLpIKLcQUJrG66a27HSo7itvX6f0pdatcpVpnjc&t=fc13185f-cc70-4eb1-86f2-ea80914407bc&sc=2);
+                    background-image: url("assets/img/pharmacy.jpeg");
                     background-size: cover;
                     background-position: center;
-                    align-content: end;
+                    display: flex;
 
-                    footer 
+                    & > footer 
                     {
-            
+                        align-self: end;
+                        padding-left: 1em;
+                        padding-bottom: 1em;    
                         
 
                         h3
@@ -185,6 +191,7 @@ body
                             text-transform: uppercase;
                             color: rgb(196, 20, 102);
                             font-size: 1.1em;
+                           
                         }
 
                         h4
@@ -192,6 +199,7 @@ body
         
                             color: white;
                             font-size: 1.2em;
+                            
                         }
 
 
@@ -202,9 +210,17 @@ body
                 {
                     grid-column: 2 / 3;
                     grid-row: 1 / 2;
-                    background-image: url(https://resize.elle.fr/article_1280/var/plain_site/storage/images/loisirs/livres/news/voici-le-livre-le-plus-vendu-en-france-en-2022-et-ce-n-est-pas-un-roman-4085975/98031195-1-fre-FR/Voici-le-livre-le-plus-vendu-en-France-en-2022-et-ce-n-est-pas-un-roman.jpg);
+                    background-image: url("assets/img/librairie.jpeg");
+                    background-size: cover;
+                    background-position: center;
+                    display: flex;
+
                     footer 
                     {
+                        align-self: end;
+                        padding-left: 1em;
+                        padding-bottom: 1em;
+
                         h3
                         {
                             text-transform: uppercase;
@@ -227,9 +243,17 @@ body
                 {
                     grid-column: 3 / 4;
                     grid-row: 1 / 2;
-                    background-image: url(https://www.petitscommerces.fr/wp-content/uploads/elementor/thumbs/LAdrienne-boulangerie-p%C3%A2tisserie-44-rue-du-commerce-94310-Orly-%C2%A9Petitscommerces-9-oexvv0p17vqwori41yaxyelwv5fea2o54mkhd1ly1o.jpg);
+                    background-image: url("assets/img/boulangerie.jpeg");
+                    background-size: cover;
+                    background-position: center;
+                    display: flex;
+
                     footer 
                     {
+                        align-self: end;
+                        padding-left: 1em;
+                        padding-bottom: 1em;
+
                         h3
                         {
                             text-transform: uppercase;
@@ -252,9 +276,17 @@ body
                 {
                     grid-column: 1 / 2;
                     grid-row: 2 / 3;
-                    background-image: url(https://media.routard.com/image/15/9/pt131624.1340159.w630.jpg);
+                    background-image: url("assets/img/mairie.jpeg");
+                    background-size: cover;
+                    background-position: center;
+                    display: flex;
+
                     footer 
                     {
+                        align-self: end;
+                        padding-left: 1em;
+                        padding-bottom: 1em;
+
                         h3
                         {
                             text-transform: uppercase;
@@ -277,9 +309,18 @@ body
                 {
                     grid-column: 2 / 3;
                     grid-row: 2 / 3;
-                    background-image: url(https://www.visit.alsace/wp-content/uploads/2018/11/festival-decibulles-2017-laurent-khram-longvixay-1-1600x900.jpg);
+                    background-image: url("assets/img/festival.jpeg");
+                    background-size: cover;
+                    background-position: center;
+                    display: flex;
+
                     footer 
                     {
+                        align-self: end;
+                        padding-left: 1em;
+                        padding-bottom: 1em;
+                        
+
                         h3
                         {
                             text-transform: uppercase;
@@ -341,7 +382,7 @@ body
 
                     input 
                     {
-
+                        height: 5vh;
                     }
                 }
             }
