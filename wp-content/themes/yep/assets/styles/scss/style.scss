@@ -4,6 +4,7 @@ html
 {
     font-size: 14px;
     scroll-behavior: smooth;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body
@@ -22,14 +23,16 @@ body
         display: grid;
         grid-template-columns: 0.2fr 0.8fr;
         background-color: rgb(10, 10, 92);
+        height: 10vh;
 
         figure
         {
             
 
+
             img
             {
-                width: 12vw;
+                width: 13vh;
                 
             }
         }
@@ -97,5 +100,268 @@ body
                 background-position: center;
             }
         }
+
+        #yepfolio-description
+        {
+            background-color: rgb(36, 36, 177);
+
+            article
+            {
+
+                padding: 2em 5em 7em 5em;
+
+                header
+                {
+                    h2 
+                    {
+                        text-transform: uppercase;
+                        color: white;
+                        text-align: center;
+                        font-size: 1.5em;
+                        padding-bottom: 3em;
+                        font-weight: 500;
+                    }
+                    
+                }
+
+                section 
+                {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 2em;
+                    p
+                    {
+                        color: white;
+                        font-size: 1.1em;
+                        
+                    }
+                }    
+            }
+        }
+
+        #last-projects
+        {
+            
+            header
+            {
+                margin-bottom: 2em;
+
+                h2
+                {
+                    text-transform: uppercase;
+                    color: rgb(36, 36, 177);
+                    text-align: center;
+                    font-size: 1.5em;
+                    font-weight: 500;
+                    padding-top: 2em;
+                }
+            }
+
+            section 
+            {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                gap: 2em;
+                padding: 3em;
+                height: 100vh;
+
+                article:first-of-type
+                {
+                    grid-column: 1 / 2;
+                    grid-row: 1 / 2;
+                    background-image: url(https://portal-cdn.scnat.ch/asset/6fa448d9-8935-5622-aabf-a38072964841/2Personalisierte_Gesundheit.png?b=25632ea7-3d85-5198-a1f0-4ad8c9dcd6ac&v=df8f0af8-c032-5691-983d-84399f3dabd8_100&s=BemJi1u43IKhuBMmsD2ab6cA6zawwM6Nr_qD3i5tf6Aj4U4VLzDFpXxq4CBe-B-5Cfj0mHLCg1S89lSrv0ZhXRFcUUkGUGXlPIQrJePIWBtf3kwOZ1sHagPcP8_VmpKU8SOWNLpIKLcQUJrG66a27HSo7itvX6f0pdatcpVpnjc&t=fc13185f-cc70-4eb1-86f2-ea80914407bc&sc=2);
+                    background-size: cover;
+                    background-position: center;
+                    align-content: end;
+
+                    footer 
+                    {
+            
+                        
+
+                        h3
+                        {
+                            text-transform: uppercase;
+                            color: rgb(196, 20, 102);
+                            font-size: 1.1em;
+                        }
+
+                        h4
+                        {
+        
+                            color: white;
+                            font-size: 1.2em;
+                        }
+
+
+                    }
+                }
+
+                article:nth-of-type(2)
+                {
+                    grid-column: 2 / 3;
+                    grid-row: 1 / 2;
+                    background-image: url(https://resize.elle.fr/article_1280/var/plain_site/storage/images/loisirs/livres/news/voici-le-livre-le-plus-vendu-en-france-en-2022-et-ce-n-est-pas-un-roman-4085975/98031195-1-fre-FR/Voici-le-livre-le-plus-vendu-en-France-en-2022-et-ce-n-est-pas-un-roman.jpg);
+                    footer 
+                    {
+                        h3
+                        {
+                            text-transform: uppercase;
+                            color: rgb(196, 20, 102);
+                            font-size: 1.1em;
+                        }
+
+                        h4
+                        {
+        
+                            color: white;
+                            font-size: 1.2em;
+                        }
+
+
+                    }
+                }
+
+                article:nth-of-type(3)
+                {
+                    grid-column: 3 / 4;
+                    grid-row: 1 / 2;
+                    background-image: url(https://www.petitscommerces.fr/wp-content/uploads/elementor/thumbs/LAdrienne-boulangerie-p%C3%A2tisserie-44-rue-du-commerce-94310-Orly-%C2%A9Petitscommerces-9-oexvv0p17vqwori41yaxyelwv5fea2o54mkhd1ly1o.jpg);
+                    footer 
+                    {
+                        h3
+                        {
+                            text-transform: uppercase;
+                            color: rgb(196, 20, 102);
+                            font-size: 1.1em;
+                        }
+
+                        h4
+                        {
+        
+                            color: white;
+                            font-size: 1.2em;
+                        }
+
+
+                    }
+                }
+
+                article:nth-of-type(4)
+                {
+                    grid-column: 1 / 2;
+                    grid-row: 2 / 3;
+                    background-image: url(https://media.routard.com/image/15/9/pt131624.1340159.w630.jpg);
+                    footer 
+                    {
+                        h3
+                        {
+                            text-transform: uppercase;
+                            color: rgb(196, 20, 102);
+                            font-size: 1.1em;
+                        }
+
+                        h4
+                        {
+        
+                            color: white;
+                            font-size: 1.2em;
+                        }
+
+
+                    }
+                }
+
+                article:last-of-type
+                {
+                    grid-column: 2 / 3;
+                    grid-row: 2 / 3;
+                    background-image: url(https://www.visit.alsace/wp-content/uploads/2018/11/festival-decibulles-2017-laurent-khram-longvixay-1-1600x900.jpg);
+                    footer 
+                    {
+                        h3
+                        {
+                            text-transform: uppercase;
+                            color: rgb(196, 20, 102);
+                            font-size: 1.1em;
+                        }
+
+                        h4
+                        {
+        
+                            color: white;
+                            font-size: 1.2em;
+                        }
+
+
+                    }
+                }
+            }
+        }
+
+        #contact
+        {
+            background-color: rgb(47, 9, 83);
+
+            header
+            {
+                padding-top: 2em;
+
+                h2 
+                {
+                    text-transform: uppercase;
+                    color: white;
+                    text-align: center;
+                    font-size: 1.5em;
+                    padding-bottom: 3em;
+                    font-weight: 500;
+                }
+            }
+
+            form
+            { 
+                display: flex;
+                flex-direction: column;
+                gap: 1em;
+                padding-left: 25vw;
+                padding-right: 25vw;
+
+                fieldset
+                {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1em;
+
+                    label
+                    {
+                        color: white;
+                        font-weight: 500;
+                    }
+
+                    input 
+                    {
+
+                    }
+                }
+            }
+
+            #submit-form
+            {
+                border: 2px white solid;
+                color: white;
+                background-color:transparent;
+                height: 7vh;
+                text-transform: uppercase;
+                margin-top: 2em;
+            }
+        }
+
+    }
+
+    & > footer 
+    {
+        background-color: rgb(47, 9, 83);
+        height: 10vh;
     }
 }

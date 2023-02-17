@@ -15,7 +15,7 @@
     <body>
         <header>
             <figure>
-                <img src="https://o.remove.bg/downloads/18b27d0e-c034-4a90-b821-99607e551b64/b88b921b0de27b28f8599271f3fedb6d-removebg-preview.png" alt="Logo du site">
+                <img src="https://cdn.dribbble.com/users/5976/screenshots/4143708/constellation__digital_marketing_innovation_agency_logo_design_by_alex_tass.png" alt="Logo du site">
             </figure>
             <nav>
                 <ul>
@@ -43,10 +43,12 @@
                     <header>
                         <h2>yepfolio en quelques mots</h2>
                     </header>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                    </p>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                    </p>
+                    <section>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                        </p>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        </p>
+                    </section>
                 </article>
             </section>
             <section id="last-projects">
@@ -54,62 +56,68 @@
                 <header>
                     <h2>mes derniers projets</h2>
                 </header>
-                <article>
-                    <footer>
-                        <h3>application santé</h3>
-                        <h4>Pharmacie de Maurepas</h4>
-                    </footer>
-                </article>
-                <article>
-                    <footer>
-                        <h3>site e-commerce</h3>
-                        <h4>Librairie l'écume des jours</h4>
-                    </footer>
-                </article>
-                <article>
-                    <footer>
-                        <h3>site vitrine</h3>
-                        <h4>Boulangerie Galtier</h4>
-                    </footer>
-                </article>
-                <article>
-                    <footer>
-                        <h3>site institutionnel</h3>
-                        <h4>Mairie de Ploutruc</h4>
-                    </footer>
-                </article>
-                <article>
-                    <footer>
-                        <h3>site promotionnel</h3>
-                        <h4>Festival des choses</h4>
-                    </footer>
-                </article>
+                <section>
+                    <article>
+                        <footer>
+                            <h3>application santé</h3>
+                            <h4>Pharmacie de Maurepas</h4>
+                        </footer>
+                    </article>
+                    <article>
+                        <footer>
+                            <h3>site e-commerce</h3>
+                            <h4>Librairie l'écume des jours</h4>
+                        </footer>
+                    </article>
+                    <article>
+                        <footer>
+                            <h3>site vitrine</h3>
+                            <h4>Boulangerie Galtier</h4>
+                        </footer>
+                    </article>
+                    <article>
+                        <footer>
+                            <h3>site institutionnel</h3>
+                            <h4>Mairie de Ploutruc</h4>
+                        </footer>
+                    </article>
+                    <article>
+                        <footer>
+                            <h3>site promotionnel</h3>
+                            <h4>Festival des choses</h4>
+                        </footer>
+                    </article>
+                </section>
             </section>
             <section id="contact">
                 <h1 class="sr-only">Formulaire de contact</h1>
                 <header>
                     <h2>me contacter</h2>
                 </header>
-                <form>
+                <form method="get">
                     <fieldset>
-                        <label for="firstname-name">Prénom + Nom *<label>
+                        <label for="firstname-name">Prénom + Nom *</label>
                         <input type="text" name="firstname-name">
                     </fieldset>
                     <fieldset>
-                        <label for="email">Email *<label>
+                        <label for="email">Email *</label>  
                         <input type="email" name="email">
                     </fieldset>
                     <fieldset>
-                        <label for="message">Message<label>
+                        <label for="message">Message</label>
                         <textarea name="message"
                         rows="5" cols="33"></textarea>
                     </fieldset>
                     <fieldset>
-                        <input type="submit" value="Envoyer">
+                        <input type="submit" id="submit-form" value="Envoyer">
                     </fieldset>
                 </form>
             </section>
+            
         </main>
+        <footer>
+                
+        </footer>
         <?php wp_footer(); ?>
     </body>
 </html>
