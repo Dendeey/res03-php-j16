@@ -1,3 +1,7 @@
+<?php  
+    $menuItems = getNavigationMenu();  
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
     <head>
@@ -63,10 +67,9 @@
             </figure>
             <nav>
                 <ul>
-                    <li><a href="#main-section">accueil</a></li>
-                    <li><a href="#yepfolio-description">à propos</a></li>
-                    <li><a href="#last-projects">mes projets</a></li>
-                    <li><a href="#contact">me contacter</a></li>
+                <?php foreach($menuItems as $item) { ?>
+                    <li><a href="<?= $item->url ?>"><?= $item->title ?> </a></li>
+                <?php } ?>
                 </ul>
             </nav>
         </header>
