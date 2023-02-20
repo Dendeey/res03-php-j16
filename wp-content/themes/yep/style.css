@@ -208,14 +208,17 @@ body > main #contact form label {
 }
 body > main #contact form input {
   height: 5vh;
+  width: 98%;
 }
-body > main #contact #submit-form {
+body > main #contact .wpcf7-submit {
   border: 2px white solid;
   color: white;
   background-color: transparent;
   height: 7vh;
   text-transform: uppercase;
   margin-top: 2em;
+  width: 40%;
+  align-self: center;
 }
 body > footer {
   background-color: rgb(47, 9, 83);

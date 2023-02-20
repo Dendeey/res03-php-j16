@@ -244,11 +244,12 @@ body
                 input 
                 {
                     height: 5vh;
+                    width: 98%;
                 }
                 
             }
 
-            #submit-form
+            .wpcf7-submit
             {
                 border: 2px white solid;
                 color: white;
@@ -256,6 +257,8 @@ body
                 height: 7vh;
                 text-transform: uppercase;
                 margin-top: 2em;
+                width: 40%;
+                align-self: center;
             }
         }
 
