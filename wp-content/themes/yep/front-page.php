@@ -106,11 +106,11 @@
                     <h2>mes derniers projets</h2>
                 </header>
                 <section>
-                    <?php foreach($data["projets"] as $project){ ?>
+                    <?php foreach($data["projets"] as $projet){ ?>
                     <article data-img="<?= $projet["image"]["url"] ?>">
                         <footer>
-                            <h3><?= $project["data"]->post_title ?></h3>
-                            <h4><?= $project["category"] ?></h4>
+                            <h3><?= $projet["data"]->post_title ?></h3>
+                            <h4><?= $projet["category"] ?></h4>
                         </footer>    
                     </article>
                     <?php } ?>
@@ -121,26 +121,8 @@
                 <header>
                     <h2>me contacter</h2>
                 </header>
-                <form method="get">
-                    <fieldset>
-                        <label for="firstname-name">Prénom + Nom *</label>
-                        <input type="text" name="firstname-name">
-                    </fieldset>
-                    <fieldset>
-                        <label for="email">Email *</label>  
-                        <input type="email" name="email">
-                    </fieldset>
-                    <fieldset>
-                        <label for="message">Message</label>
-                        <textarea name="message"
-                        rows="5" cols="33"></textarea>
-                    </fieldset> 
-                    <fieldset>
-                        <input type="submit" id="submit-form" value="Envoyer">
-                    </fieldset>
-                </form>
+                <?php echo do_shortcode("[contact-form-7 id='50' title='Formulaire-de-contact']"); ?>
             </section>
-            
         </main>
         <footer>
                 
@@ -148,5 +130,5 @@
         <?php wp_footer(); ?>
         
     </body>
-    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript"  src="<?php echo get_template_directory_uri(); ?>/index.js"></script>
 </html>

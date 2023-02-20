@@ -6,8 +6,8 @@ window.addEventListener("DOMContentLoaded", function(){
     {  
         let $url = $articles[i].getAttribute("data-img");  
         $articles[i].style.backgroundImage = `url("${$url}")`;  
-
+        
     }  
 
-    console.log("Hello");
+    
  });

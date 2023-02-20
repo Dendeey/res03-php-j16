@@ -170,11 +170,8 @@ body
                 padding: 3em;
                 height: 100vh;
 
-                article:first-of-type
+                article
                 {
-                    grid-column: 1 / 2;
-                    grid-row: 1 / 2;
-                    // background-image: url("assets/img/pharmacy.jpeg");
                     background-size: cover;
                     background-position: center;
                     display: flex;
@@ -200,139 +197,6 @@ body
                             color: white;
                             font-size: 1.2em;
                             
-                        }
-
-
-                    }
-                }
-
-                article:nth-of-type(2)
-                {
-                    grid-column: 2 / 3;
-                    grid-row: 1 / 2;
-                    // background-image: url("assets/img/librairie.jpeg");
-                    background-size: cover;
-                    background-position: center;
-                    display: flex;
-
-                    footer 
-                    {
-                        align-self: end;
-                        padding-left: 1em;
-                        padding-bottom: 1em;
-
-                        h3
-                        {
-                            text-transform: uppercase;
-                            color: rgb(196, 20, 102);
-                            font-size: 1.1em;
-                        }
-
-                        h4
-                        {
-        
-                            color: white;
-                            font-size: 1.2em;
-                        }
-
-
-                    }
-                }
-
-                article:nth-of-type(3)
-                {
-                    grid-column: 3 / 4;
-                    grid-row: 1 / 2;
-                    // background-image: url("assets/img/boulangerie.jpeg");
-                    background-size: cover;
-                    background-position: center;
-                    display: flex;
-
-                    footer 
-                    {
-                        align-self: end;
-                        padding-left: 1em;
-                        padding-bottom: 1em;
-
-                        h3
-                        {
-                            text-transform: uppercase;
-                            color: rgb(196, 20, 102);
-                            font-size: 1.1em;
-                        }
-
-                        h4
-                        {
-        
-                            color: white;
-                            font-size: 1.2em;
-                        }
-
-
-                    }
-                }
-
-                article:nth-of-type(4)
-                {
-                    grid-column: 1 / 2;
-                    grid-row: 2 / 3;
-                    // background-image: url("assets/img/mairie.jpeg");
-                    background-size: cover;
-                    background-position: center;
-                    display: flex;
-
-                    footer 
-                    {
-                        align-self: end;
-                        padding-left: 1em;
-                        padding-bottom: 1em;
-
-                        h3
-                        {
-                            text-transform: uppercase;
-                            color: rgb(196, 20, 102);
-                            font-size: 1.1em;
-                        }
-
-                        h4
-                        {
-        
-                            color: white;
-                            font-size: 1.2em;
-                        }
-
-
-                    }
-                }
-
-                article:last-of-type
-                {
-                    grid-column: 2 / 3;
-                    grid-row: 2 / 3;
-                    // background-image: url("assets/img/festival.jpeg");
-                    background-size: cover;
-                    background-position: center;
-                    display: flex;
-
-                    footer 
-                    {
-                        align-self: end;
-                        padding-left: 1em;
-                        padding-bottom: 1em;
-                        
-
-                        h3
-                        {
-                            text-transform: uppercase;
-                            color: rgb(196, 20, 102);
-                            font-size: 1.1em;
-                        }
-
-                        h4
-                        {
-        
-                            color: white;
-                            font-size: 1.2em;
                         }
 
 
@@ -368,23 +232,20 @@ body
                 padding-left: 25vw;
                 padding-right: 25vw;
 
-                fieldset
+                label
                 {
+                    color: white;
+                    font-weight: 500;
                     display: flex;
                     flex-direction: column;
                     gap: 1em;
-
-                    label
-                    {
-                        color: white;
-                        font-weight: 500;
-                    }
-
-                    input 
-                    {
-                        height: 5vh;
-                    }
                 }
+
+                input 
+                {
+                    height: 5vh;
+                }
+                
             }
 
             #submit-form

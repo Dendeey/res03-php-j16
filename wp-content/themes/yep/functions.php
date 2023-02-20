@@ -83,4 +83,9 @@ function getHomepageData()
   
     return $data;  
 }
+
+
+// Pour éviter que Contact Form 7 nous rajoute des balises <p>.
+
+add_filter('wpcf7_autop_or_not', '__return_false');
 ?>
