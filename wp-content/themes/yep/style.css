@@ -162,7 +162,6 @@ body > main #last-projects section {
 body > main #last-projects section article:first-of-type {
   grid-column: 1/2;
   grid-row: 1/2;
-  background-image: url("assets/img/pharmacy.jpeg");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -184,7 +183,6 @@ body > main #last-projects section article:first-of-type > footer h4 {
 body > main #last-projects section article:nth-of-type(2) {
   grid-column: 2/3;
   grid-row: 1/2;
-  background-image: url("assets/img/librairie.jpeg");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -206,7 +204,6 @@ body > main #last-projects section article:nth-of-type(2) footer h4 {
 body > main #last-projects section article:nth-of-type(3) {
   grid-column: 3/4;
   grid-row: 1/2;
-  background-image: url("assets/img/boulangerie.jpeg");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -228,7 +225,6 @@ body > main #last-projects section article:nth-of-type(3) footer h4 {
 body > main #last-projects section article:nth-of-type(4) {
   grid-column: 1/2;
   grid-row: 2/3;
-  background-image: url("assets/img/mairie.jpeg");
   background-size: cover;
   background-position: center;
   display: flex;
@@ -250,7 +246,6 @@ body > main #last-projects section article:nth-of-type(4) footer h4 {
 body > main #last-projects section article:last-of-type {
   grid-column: 2/3;
   grid-row: 2/3;
-  background-image: url("assets/img/festival.jpeg");
   background-size: cover;
   background-position: center;
   display: flex;

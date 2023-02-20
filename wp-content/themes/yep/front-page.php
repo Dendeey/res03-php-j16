@@ -1,6 +1,10 @@
 <?php  
     $menuItems = getNavigationMenu();  
     $data = getHomepageData();  
+
+    // echo "<pre>";
+    // var_dump(getProjects());
+    // echo "<pre>";
 ?>
 
 <!DOCTYPE html>
@@ -102,36 +106,14 @@
                     <h2>mes derniers projets</h2>
                 </header>
                 <section>
-                    <article>
+                    <?php foreach($data["projets"] as $project){ ?>
+                    <article data-img="<?= $projet["image"]["url"] ?>">
                         <footer>
-                            <h3>application santé</h3>
-                            <h4>Pharmacie de Maurepas</h4>
-                        </footer>
+                            <h3><?= $project["data"]->post_title ?></h3>
+                            <h4><?= $project["category"] ?></h4>
+                        </footer>    
                     </article>
-                    <article>
-                        <footer>
-                            <h3>site e-commerce</h3>
-                            <h4>Librairie l'écume des jours</h4>
-                        </footer>
-                    </article>
-                    <article>
-                        <footer>
-                            <h3>site vitrine</h3>
-                            <h4>Boulangerie Galtier</h4>
-                        </footer>
-                    </article>
-                    <article>
-                        <footer>
-                            <h3>site institutionnel</h3>
-                            <h4>Mairie de Ploutruc</h4>
-                        </footer>
-                    </article>
-                    <article>
-                        <footer>
-                            <h3>site promotionnel</h3>
-                            <h4>Festival des choses</h4>
-                        </footer>
-                    </article>
+                    <?php } ?>
                 </section>
             </section>
             <section id="contact">
@@ -164,5 +146,7 @@
                 
         </footer>
         <?php wp_footer(); ?>
+        
     </body>
+    <script type="text/javascript" src="index.js"></script>
 </html>
